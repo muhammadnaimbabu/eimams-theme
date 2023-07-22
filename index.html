@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- // title  -->
+    <title>Document</title>
+
+    <!-- // Grid system of bootstrap  -->
+    <link rel="stylesheet" href="./bootstrap-grid.css">
+
+    <!-- // icon  -->
+    <script src="./icon/dist/feather.js"></script>
+
+    <!-- Swiper js  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: fit-content;
+        }
+    </style>
+
+    <!-- // main css  -->
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+    <header class="bootstrap-wrapper">
+        <div class="container">
+            <section class="navbar sticky">
+                <div class="img-and-links">
+                    <a href="#" class="logo"><img src="./img/Logo.svg" width="100px" alt=""></a>
+
+                    <ul class="menu-items">
+                        <li><a href="#" class="menu-item first-item">Home</a></li>
+                        <li><a href="#" class="menu-item first-item">About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-item first-item expand-btn">Career Advice
+                                <i class="feather-16" data-feather="chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu sample">
+                                <li><a href="#" class="menu-item">Item 1</a></li>
+                                <li><a href="#" class="menu-item">Item 2</a></li>
+                                <li><a href="#" class="menu-item">Item 3</a></li>
+                                <!-- <li class="dropdown dropdown-right">
+                                    <a href="#" class="menu-item expand-btn">
+                                        item4
+                                        <i class="feather-16" data-feather="chevron-right"></i>
+                                    </a>
+                                    <ul class="menu-right sample">
+                                        <li><a href="#" class="menu-item">Item 4.1</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.2</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.3</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.4</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.5</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.6</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.7</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.8</a></li>
+                                    </ul>
+                                </li> -->
+                                <li><a href="#" class="menu-item">Item 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-item first-item expand-btn">Consultancy
+                                <i class="feather-16" data-feather="chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu sample">
+                                <li><a href="#" class="menu-item">Item 1</a></li>
+                                <li><a href="#" class="menu-item">Item 2</a></li>
+                                <li><a href="#" class="menu-item">Item 3</a></li>
+                                <li class="dropdown dropdown-right">
+                                    <a href="#" class="menu-item expand-btn">
+                                        Chaplaincy
+                                        <i class="feather-16" data-feather="chevron-right"></i>
+                                    </a>
+                                    <ul class="menu-right sample">
+                                        <li><a href="#" class="menu-item">Item 4.1</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.2</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.3</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.4</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.5</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.6</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.7</a></li>
+                                        <li><a href="#" class="menu-item">Item 4.8</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="menu-item">Item 5</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="menu-item first-item">Contact Us</a></li>
+                        <div class="mobile-buttons">
+                            <li><a href="#" class="secondary-btn login-btn">Login</a></li>
+                            <li><a href="#" class="primary-btn donate-btn">Donate Now</a></li>
+                        </div>
+
+                    </ul>
+                </div>
+                <div class="menu-btn">
+                    <i data-feather="align-right"></i>
+                </div>
+                <div class="cta-buttons">
+                    <a href="" class="login-btn un">Login</a>
+                    <a href="" class="primary-btn un">Donate Today</a>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <!-- // Mobile version header  -->
+    <div class="overlay"></div>
+
+    <main class="bootstrap-wrapper">
+
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-section-content">
+                    <div class="hero-content">
+                        <h1 class="hero-h1">Find Your Jobs With <span class="eimams-brand">Eimams</span></h1>
+                        <span class="hero-info">For thousands of jobs in different Islamic sectors visit
+                            <strong>www.eimams.com</strong>
+                            ,where you will find
+                            employers advertising new openings locally and nationally.</span>
+                        <div class="hero-buttons">
+                            <a href="" class="primary-btn employer-btn">
+                                <i class="feather-16" data-feather="briefcase"></i>
+                                <span>Employers Signup</span>
+                            </a>
+
+                            <a href="" class="secondary-btn jobseeker-btn">
+                                <i class="feather-16" data-feather="user"></i>
+                                <span>Jobseekers Signup</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <img src="./img/Image.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container">
+                <div class="search-content">
+                    <h2>Searching Your Dream Job</h2>
+                    <span>We have 26 available Job(s) for you.</span>
+                </div>
+                <div class="search-filters">
+                    <!-- // Item  -->
+                    <div class="filters">
+                        <i class="feather-16" data-feather="briefcase"></i>
+                        <select name="" id="">
+                            <option value="">
+                                Jobs Classification
+                            </option>
+                        </select>
+                        <i class="feather-16" data-feather="chevron-down"></i>
+                    </div>
+                    <!-- // Item  -->
+                    <div class="filters">
+                        <i class="feather-16" data-feather="briefcase"></i>
+                        <select name="" id="">
+                            <option value="">
+                                Job Type
+                            </option>
+                        </select>
+                        <i class="feather-16" data-feather="chevron-down"></i>
+                    </div>
+                    <!-- // Item  -->
+                    <div class="filters">
+                        <i class="feather-16" data-feather="users"></i>
+                        <select name="" id="">
+                            <option value="">
+                                Gender
+                            </option>
+                        </select>
+                        <i class="feather-16" data-feather="chevron-down"></i>
+                    </div>
+                    <!-- // Item  -->
+                    <div class="filters">
+                        <div class="feather-16">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"
+                                id="graduation-cap">
+                                <path
+                                    d="M21.49,10.19l-1-.55h0l-9-5-.11,0a1.06,1.06,0,0,0-.19-.06l-.19,0-.18,0a1.17,1.17,0,0,0-.2.06l-.11,0-9,5a1,1,0,0,0,0,1.74L4,12.76V17.5a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3V12.76l2-1.12V14.5a1,1,0,0,0,2,0V11.06A1,1,0,0,0,21.49,10.19ZM16,17.5a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V13.87l4.51,2.5.15.06.09,0a1,1,0,0,0,.25,0h0a1,1,0,0,0,.25,0l.09,0a.47.47,0,0,0,.15-.06L16,13.87Zm-5-3.14L4.06,10.5,11,6.64l6.94,3.86Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <select name="" id="">
+                            <option value="">
+                                Qualification
+                            </option>
+                        </select>
+                        <i class="feather-16" data-feather="chevron-down"></i>
+                    </div>
+                    <!-- // Item  -->
+                    <div class="filters">
+                        <i class="feather-16" data-feather="trending-up"></i>
+                        <select name="" id="">
+                            <option value="">
+                                Experience
+                            </option>
+                        </select>
+                        <i class="feather-16" data-feather="chevron-down"></i>
+                    </div>
+                    <!-- // Item  -->
+                    <div class="filters">
+                        <i class="feather-16" data-feather="map"></i>
+                        <select name="" id="">
+                            <option value="">
+                                Country
+                            </option>
+                        </select>
+                        <i class="feather-16" data-feather="chevron-down"></i>
+                    </div>
+                    <!-- // Item  -->
+                    <div class="filters">
+                        <i class="feather-16" data-feather="map-pin"></i>
+                        <select name="" id="">
+                            <option value="">
+                                Location
+                            </option>
+                        </select>
+                        <i class="feather-16" data-feather="chevron-down"></i>
+                    </div>
+                    <!-- // Item  -->
+                    <div class="filters">
+                        <i class="feather-16" data-feather="globe"></i>
+                        <select name="" id="">
+                            <option value="">
+                                Language
+                            </option>
+                        </select>
+                        <i class="feather-16" data-feather="chevron-down"></i>
+                    </div>
+                    <!-- // Item  -->
+                    <div class="filters">
+                        <i class="feather-16" data-feather="dollar-sign"></i>
+                        <select name="" id="">
+                            <option value="">
+                                Country
+                            </option>
+                        </select>
+                        <i class="feather-16" data-feather="chevron-down"></i>
+                    </div>
+                    <div class="filters">
+                        <button class="submit-btn" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="scholer">
+
+            <div class="container">
+                <div class="scholer__bg">
+
+                    <h2 data-aos="fade-up" class="subheader scholer__header">Appreciated by <span>Eminent
+                            Scholar</span>
+                    </h2>
+                    <div class="scholer__contents">
+                        <div class="scoler__inner">
+
+                            <div class="swiper mySwiper ">
+                                <div class="swiper-wrapper">
+
+                                    <!-- Item  -->
+                                    <div class="scholer__items swiper-slide">
+                                        <div class="scholer__img">
+                                            <img src="./img/Ellipse1.png" alt="fdfd">
+                                        </div>
+                                        <a class="scholer__name">Scholars Name</a>
+                                    </div>
+
+                                    <!-- Item  -->
+                                    <div class="scholer__items swiper-slide">
+                                        <div class="scholer__img">
+                                            <img src="./img/Ellipse2.png" alt="fdfd">
+                                        </div>
+                                        <a class="scholer__name">Scholars Name</a>
+                                    </div>
+
+                                    <!-- Item  -->
+                                    <div class="scholer__items swiper-slide">
+                                        <div class="scholer__img">
+                                            <img src="./img/Ellipse3.png" alt="fdfd">
+                                        </div>
+                                        <a class="scholer__name">Scholars Name</a>
+                                    </div>
+
+                                    <!-- Item  -->
+                                    <div class="scholer__items swiper-slide">
+                                        <div class="scholer__img">
+                                            <img src="./img/Ellipse4.png" alt="fdfd">
+                                        </div>
+                                        <a class="scholer__name">Scholars Name</a>
+                                    </div>
+
+                                    <!-- Item  -->
+                                    <div class="scholer__items swiper-slide">
+                                        <div class="scholer__img">
+                                            <img src="./img/Ellipse5.png" alt="fdfd">
+                                        </div>
+                                        <a class="scholer__name">Scholars Name</a>
+                                    </div>
+
+                                    <!-- Item  -->
+                                    <div class="scholer__items swiper-slide">
+                                        <div class="scholer__img">
+                                            <img src="./img/Ellipse1.png" alt="fdfd">
+                                        </div>
+                                        <a class="scholer__name">Scholars Name</a>
+                                    </div>
+                                </div>
+                                <!-- <div class="swiper-pagination"></div> -->
+
+                            </div>
+                            <div class="scholer__Slickbutton">
+                                <div class="scholerPrev__button">
+                                    <i class="feather-16" data-feather="chevron-left"></i>
+                                </div>
+                                <div class="scholerNext__button">
+                                    <i class="feather-16" data-feather="chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="eimams">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="eimams__images">
+                        <div class="eimams__images">
+                            <div class="eimams__imgItems">
+                                <img src="./img/eimas.png" alt="eimams">
+                                <div class="eimams__imgItems--jobsbg">
+                                    <div class="eimams__imgItemsJobs">
+                                        <p>26</p>
+                                        <span>Available jobs!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eimams__contents">
+                        <h2>Welcome to <span>eimams</span></h2>
+                        <p>Eimams is the only specialist Muslim job board in UK and perhaps
+                            elsewhere too. Vacancies
+                            from
+                            all Islamic sectors are available including Mosques, Madrasas, Islamic schools,
+                            charities
+                            and
+                            Islamic media. With bespoke search tools & specialist fields you can easily look for
+                            jobs to
+                            your liking and also advertise according to the needs of your organisation. This is the
+                            way
+                            forward for specialist Muslim job advertisement and search.</p>
+
+                        <a href="#" class="primary-btn"><span>More Details </span>
+                            <i class="feather-16" data-feather="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div data-aos="fade-up" data-aos-duration="1000" class="endorsement">
+                <div class="container">
+                    <h2 class="subheader endorsement__header">Endorsement</h2>
+                    <div class="swiper endorsementM">
+                        <div class="swiper-wrapper">
+                            <div class="endorsement__items swiper-slide">
+                                <div class="endorsemnent__img ">
+                                    <img src="./img/comma.svg" alt="comma">
+                                </div>
+                                <p class="endorsement__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Tincidunt
+                                    sit
+                                    venenatis, vulputate tristique fringilla ut. Vitae pulvina. Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit. Tincidunt sit venenatis, vulputate tristique fringilla
+                                    ut.
+                                    Vitae
+                                    pulvina.</p>
+                                <div class="endorsement__inner">
+                                    <div class="endorsement__innerImg">
+                                        <img src="./img/Ellipse6.svg" alt="ellips">
+                                    </div>
+                                    <div class="endorsement__innerText">
+                                        <h3>Qasim Ali Shah</h3>
+                                        <p>Motivational Speaker</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="endorsement__items swiper-slide">
+                                <div class="endorsemnent__img ">
+                                    <img src="./img/comma.svg" alt="comma">
+                                </div>
+                                <p class="endorsement__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Tincidunt
+                                    sit
+                                    venenatis, vulputate tristique fringilla ut. Vitae pulvina. Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit. Tincidunt sit venenatis, vulputate tristique fringilla
+                                    ut.
+                                    Vitae
+                                    pulvina.</p>
+                                <div class="endorsement__inner">
+                                    <div class="endorsement__innerImg">
+                                        <img src="./img/Ellipse6.svg" alt="ellips">
+                                    </div>
+                                    <div class="endorsement__innerText">
+                                        <h3>Qasim Ali Shah</h3>
+                                        <p>Motivational Speaker</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="endorsement__items swiper-slide">
+                                <div class="endorsemnent__img ">
+                                    <img src="./img/comma.svg" alt="comma">
+                                </div>
+                                <p class="endorsement__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Tincidunt
+                                    sit
+                                    venenatis, vulputate tristique fringilla ut. Vitae pulvina. Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit. Tincidunt sit venenatis, vulputate tristique fringilla
+                                    ut.
+                                    Vitae
+                                    pulvina.</p>
+                                <div class="endorsement__inner">
+                                    <div class="endorsement__innerImg">
+                                        <img src="./img/Ellipse6.svg" alt="ellips">
+                                    </div>
+                                    <div class="endorsement__innerText">
+                                        <h3>Qasim Ali Shah</h3>
+                                        <p>Motivational Speaker</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="endorsement__items swiper-slide">
+                                <div class="endorsemnent__img ">
+                                    <img src="./img/comma.svg" alt="comma">
+                                </div>
+                                <p class="endorsement__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Tincidunt
+                                    sit
+                                    venenatis, vulputate tristique fringilla ut. Vitae pulvina. Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit. Tincidunt sit venenatis, vulputate tristique fringilla
+                                    ut.
+                                    Vitae
+                                    pulvina.</p>
+                                <div class="endorsement__inner">
+                                    <div class="endorsement__innerImg">
+                                        <img src="./img/Ellipse6.svg" alt="ellips">
+                                    </div>
+                                    <div class="endorsement__innerText">
+                                        <h3>Qasim Ali Shah</h3>
+                                        <p>Motivational Speaker</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="endorsement__items swiper-slide">
+                                <div class="endorsemnent__img ">
+                                    <img src="./img/comma.svg" alt="comma">
+                                </div>
+                                <p class="endorsement__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Tincidunt
+                                    sit
+                                    venenatis, vulputate tristique fringilla ut. Vitae pulvina. Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit. Tincidunt sit venenatis, vulputate tristique fringilla
+                                    ut.
+                                    Vitae
+                                    pulvina.</p>
+                                <div class="endorsement__inner">
+                                    <div class="endorsement__innerImg">
+                                        <img src="./img/Ellipse6.svg" alt="ellips">
+                                    </div>
+                                    <div class="endorsement__innerText">
+                                        <h3>Qasim Ali Shah</h3>
+                                        <p>Motivational Speaker</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="endorsement__items swiper-slide">
+                                <div class="endorsemnent__img ">
+                                    <img src="./img/comma.svg" alt="comma">
+                                </div>
+                                <p class="endorsement__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Tincidunt
+                                    sit
+                                    venenatis, vulputate tristique fringilla ut. Vitae pulvina. Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit. Tincidunt sit venenatis, vulputate tristique fringilla
+                                    ut.
+                                    Vitae
+                                    pulvina.</p>
+                                <div class="endorsement__inner">
+                                    <div class="endorsement__innerImg">
+                                        <img src="./img/Ellipse6.svg" alt="ellips">
+                                    </div>
+                                    <div class="endorsement__innerText">
+                                        <h3>Qasim Ali Shah</h3>
+                                        <p>Motivational Speaker</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========employers starts here===========-->
+        <section data-aos="fade-up" data-aos-duration="1000" class="top-employer">
+            <div class="container">
+                <div class="employes__header">
+                    <h2>Top Employers</h2>
+                    <div class="employe__slickButton">
+                        <div class="emp__prev__button">
+                            <i class="feather-16" data-feather="chevron-left"></i>
+                        </div>
+                        <div class="emp__next__button">
+                            <i class="feather-16" data-feather="chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper top-employers">
+                    <div class="swiper-wrapper">
+                        <div class="employes_partnerImg swiper-slide">
+                            <div class="employe_img">
+                                <img src="./img/top_employess1.png" width="100%" alt="employe">
+                            </div>
+                            <p>The Masjid Project</p>
+                        </div>
+                        <div class="employes_partnerImg swiper-slide">
+                            <div class="employe_img">
+                                <img src="./img/top_employess2.png" width="100%" alt="employe">
+                            </div>
+                            <p>The Masjid Project</p>
+                        </div>
+                        <div class="employes_partnerImg swiper-slide">
+                            <div class="employe_img">
+                                <img src="./img/top_employess3.png" width="100%" alt="employe">
+                            </div>
+                            <p>The Masjid Project</p>
+                        </div>
+                        <div class="employes_partnerImg swiper-slide">
+                            <div class="employe_img">
+                                <img src="./img/top_employess4.png" width="100%" alt="employe">
+                            </div>
+                            <p>The Masjid Project</p>
+                        </div>
+                        <div class="employes_partnerImg swiper-slide">
+                            <div class="employe_img">
+                                <img src="./img/top_employess1.png" width="100%" alt="employe">
+                            </div>
+                            <p>The Masjid Project</p>
+                        </div>
+                        <div class="employes_partnerImg swiper-slide">
+                            <div class="employe_img">
+                                <img src="./img/top_employess2.png" width="100%" alt="employe">
+                            </div>
+                            <p>The Masjid Project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========vedio starts here===========-->
+        <section class="vedio">
+            <!--this will be vedio tag and link any vedio-->
+            <div class="container">
+                <div class="vedio__contents">
+                    <div class="swiper video1">
+                        <div class="swiper-wrapper">
+                            <div class="vedio__items swiper-slide">
+                                <div class="vedio__img"><iframe width="100%" height="315"
+                                        src="https://www.youtube.com/embed/T_r6Ok64bVM" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="vedio__items swiper-slide">
+                                <div class="vedio__img">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/zQJ6AkYLLCU"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="vedio__items swiper-slide">
+                                <div class="vedio__img">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/d86ws7mQYIg"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="max-pagination"></div>
+                    </div>
+                    <div class="swiper video2">
+                        <div class="swiper-wrapper">
+                            <div class="vedio__items swiper-slide">
+                                <div class="vedio__img"><iframe width="100%" height="315"
+                                        src="https://www.youtube.com/embed/T_r6Ok64bVM" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="vedio__items swiper-slide">
+                                <div class="vedio__img"><iframe width="100%" height="315"
+                                        src="https://www.youtube.com/embed/T_r6Ok64bVM" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="vedio__items swiper-slide">
+                                <div class="vedio__img"><iframe width="100%" height="315"
+                                        src="https://www.youtube.com/embed/T_r6Ok64bVM" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="max-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========subscribe starts here===========-->
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__contents">
+                    <div class="subscribe__Items">
+                        <div class="subcribe__header">
+                            <img src="./img/Logo.svg" alt="eimams">
+                        </div>
+                        <p>Join our newsletter and receive the best job openings of the week, right on your inbox.
+                        </p>
+                    </div>
+                    <div class="subscribe__form">
+                        <input type="text" placeholder="Subscribe to our newsletter" class="subscribe__link">
+                        <button class="subscribe__button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer__contents">
+                    <div class="footer__items">
+                        <h2 class="footer__header">About Us</h2>
+                        <p class="footer__about footer__text--font">We have job vacancies from all sectors including
+                            both,
+                            Muslim and mainstream organizations.</p>
+                    </div>
+                    <div class="footer__items">
+                        <h2 class="footer__header">Quick Link</h2>
+                        <ul>
+                            <li><a href="#" class="footer__text--font">Home</a></li>
+                            <li><a href="#" class="footer__text--font">Career Advice</a></li>
+                            <li><a href="#" class="footer__text--font">Consultancy</a></li>
+                            <li><a href="#" class="footer__text--font">Create Account</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__items">
+                        <h2 class="footer__header">Information</h2>
+                        <ul>
+                            <li>
+                                <a href="#" class="footer__text--font">
+                                    <i data-feather="phone"></i>
+                                    075 0765 3582
+                                </a>
+                            </li>
+                            <li><a href="mailto:" class="footer__text--font">
+                                    <i data-feather="mail"></i>
+                                    info@eimams.com</a></li>
+                            <li><a href="#" class="footer__text--font">
+                                    <i data-feather="map-pin"></i>
+                                    55 Station Road, Swindon, SW1 4BG, UK</a></li>
+                    </div>
+                    <div class="footer__items">
+                        <h2 class="footer__header">Connect</h2>
+                        <div class="footer__iconItems">
+                            <div class="footer__icon">
+                                <i class="feather-16" data-feather="facebook"></i>
+                            </div>
+                            <div class="footer__icon">
+                                <i class="feather-16" data-feather="instagram"></i>
+                            </div>
+                            <div class="footer__icon">
+                                <i class="feather-16" data-feather="twitter"></i>
+                            </div>
+                            <div class="footer__icon">
+                                <i class="feather-16" data-feather="youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights">
+                <div class="container">
+                    <div class="copyright__contents">
+                        <div class="copyright__items">
+                            <p class="footer__text--font">Copyright © 2023 eimams. All Rights Reserved.</p>
+                        </div>
+                        <div class="copyright__logo">
+                            <img src="./img/copyright.png" alt="copyright">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+    </main>
+
+    <!-- Swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
